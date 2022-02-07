@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  overflow: hidden;
+  color: rgb(253, 249, 245);
+  font-family: "Nokora", sans-serif;
+  background: center/cover url(../img/bg.jfif) rgba(109, 72, 25, 0.815);
+  background-blend-mode: multiply;
+  filter: contrast(110%) saturate(200%);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.288);
+}
+
+body * {
+  z-index: 10;
+}
+
+.title {
+  font-size: 7rem;
+  margin: 6.5rem 0 2rem;
+}
+
+.remaining-time {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.time {
+  margin: 0 2rem;
+  font-size: 2.7rem;
+}
+
+.time > p:first-child {
+  font-size: 6rem;
+}
+
+#coming-year {
+  text-align: center;
+  font-size: 22rem;
+  color: rgb(253, 249, 245);
+  letter-spacing: 1.1rem;
+  overflow: hidden;
+}
+
+::selection {
+  color: rgb(69, 37, 15);
+  background-color: rgb(240, 222, 195);
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  html {
+    font-size: 3.5px;
+  }
+}

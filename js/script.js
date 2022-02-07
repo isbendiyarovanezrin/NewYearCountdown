@@ -31,3 +31,7 @@ function calculateRemainingTime() {
 }
 
 setInterval(calculateRemainingTime, 1000);
+
+// music
+const song = document.getElementById("song");
+song.play();

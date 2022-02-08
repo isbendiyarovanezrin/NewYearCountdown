@@ -1,3 +1,12 @@
+:root {
+  --deep-oak: rgb(69, 37, 15);
+  --almond: rgb(240, 222, 195);
+  --vista-white: rgb(253, 249, 245);
+  --raw-umber: rgba(109, 72, 25, 0.815);
+  --transparent-black: rgba(0, 0, 0, 0.288);
+  --font-family: "Nokora", sans-serif;
+}
+
 *,
 *::after,
 *::before {
@@ -19,9 +28,9 @@ body {
   min-height: 100vh;
   padding: 2rem;
   overflow: hidden;
-  color: rgb(253, 249, 245);
-  font-family: "Nokora", sans-serif;
-  background: center/cover no-repeat url(../img/bg.jfif) rgba(109, 72, 25, 0.815);
+  color: var(--vista-white);
+  font-family: var(--font-family);
+  background: center/cover no-repeat url(../img/bg.jfif) var(--raw-umber);
   background-blend-mode: multiply;
   filter: contrast(110%) saturate(200%);
 }
@@ -33,7 +42,7 @@ body::after {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.288);
+  background-color: var(--transparent-black);
 }
 
 body * {
@@ -63,14 +72,14 @@ body * {
 #coming-year {
   text-align: center;
   font-size: 22rem;
-  color: rgb(253, 249, 245);
+  color: var(--vista-white);
   letter-spacing: 1.1rem;
   overflow: hidden;
 }
 
 ::selection {
-  color: rgb(69, 37, 15);
-  background-color: rgb(240, 222, 195);
+  color: var(--deep-oak);
+  background-color: var(--almond);
 }
 
 @media screen and (max-width: 900px) {
